@@ -12,13 +12,6 @@ function LoginForm() {
           <form>
             <input
               className='login-input'
-              name='username'
-              type='text'
-              placeholder='Your full name'
-            />
-            <br />
-            <input
-              className='login-input'
               name='email'
               type='email'
               placeholder='Your Email'
@@ -31,14 +24,12 @@ function LoginForm() {
               placeholder='Your Password'
             />
             <br />
-            <input
-              className='login-input'
-              name='cpassword'
-              type='password'
-              placeholder='Re-Enter password'
-            />
+            
             <br />
-            <Button buttonStyle='btn--primary'>Submit</Button>
+            <Button buttonStyle='btn--outline'>Submit</Button>
+            <br />
+            <br />
+            <Button buttonStyle='btn--outline' links='register'>Don't have an account? Sign In</Button>
           </form>
     </div>
     </div>

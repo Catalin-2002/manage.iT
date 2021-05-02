@@ -58,7 +58,6 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
             Manage.iT
-            <img alt="manageitLogo" className="manageitLogo" src={manageitLogo} />
             </Link>
           </div>
           <small class='website-rights'>dualCore © 2021</small>

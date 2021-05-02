@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>WHERE TEAMS HAVE IT DONE</h1>
+      <h1 className="parDesc">WHERE TEAMS HAVE IT DONE</h1>
       <p>Join now in order to fulfil the final objectives.</p>
       <div className='hero-btns'>
         <Button

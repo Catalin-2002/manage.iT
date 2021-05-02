@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 
-import manageitLogo from '../../Images/manageitLogo.jpg';
+import manageitLogo from '../../Images/logo_v2.png';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -32,7 +32,6 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Manage.iT
             <img alt="manageitLogo" className="manageitLogo" src={manageitLogo} />
           </Link>
           <div className='menu-icon' onClick={handleClick}>

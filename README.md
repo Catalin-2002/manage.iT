@@ -4,3 +4,5 @@ Plugins de instalat:
 
 Ce n am fct : 
 - remove la logo la scrisu de jos
+- mai trb adaugat un scroll view or smth in dashboard
+- ar trb sa implementam authu maine

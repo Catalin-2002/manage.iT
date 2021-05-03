@@ -8,7 +8,6 @@ function Register() {
   return(
     <>
       <RegisterForm />
-      <Footer />
     </>
   )
 }

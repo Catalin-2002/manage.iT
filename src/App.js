@@ -11,6 +11,7 @@ import Profile from './Pages/Profile';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Dashboard from './Pages/Dashboard';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
           <Route path='/profile' component = {Profile} />
           <Route path='/dashboard' component = {Dashboard} />
         </Switch>
+        <Footer />
       </Router>
+      
     </>
   );
 }

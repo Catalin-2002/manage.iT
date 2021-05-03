@@ -29,7 +29,7 @@ function LoginForm() {
             <Button buttonStyle='btn--outline'>Submit</Button>
             <br />
             <br />
-            <Button buttonStyle='btn--outline' links='register'>Don't have an account? Sign In</Button>
+            <Button buttonStyle='btn--outline' links='register'>Don't have an account? Sign Up</Button>
           </form>
     </div>
     </div>

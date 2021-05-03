@@ -7,9 +7,9 @@ import Home   from './Pages/Home';
 
 import Register from './Pages/Register';
 import SignUp from './Pages/SignUp';
+import Profile from './Pages/Profile';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route path='/'        exact component  = {Home}   />
           <Route path='/sign-up' component        = {SignUp} />
           <Route path='/register' component = {Register} />
+          <Route path='/profile' component = {Profile} />
         </Switch>
       </Router>
     </>

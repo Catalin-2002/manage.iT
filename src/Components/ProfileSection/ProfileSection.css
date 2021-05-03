@@ -1,0 +1,125 @@
+.PictureDisplay{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 190px;
+    margin-left: 400px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-bottom: ridge;
+    border-color: rgb(116, 116, 116);
+    border-radius: 2px;
+}
+
+.Image{
+    width: 150px;
+    height: 150px;
+}
+
+.btnChange{
+    background-color: transparent;
+    color: rgb(156, 115, 115);
+    padding: 5px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+    width: 120px;
+}
+
+.btnChange:hover{
+    transition: all 0.3s ease-out;
+    color: #242424;
+    transition: 250ms;
+}
+
+.ProfileSection{
+    width: 100%;
+    display:flex ;
+    flex-direction: row;
+    align-items: center;
+}
+
+.PersonalFields{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.inputProfile{
+    width: 150px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.labelProfile{
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.btnSave{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 130px;
+    margin-left: -150px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+    padding: 10px;
+}
+
+.btnSave:hover{
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #546668;
+    border-color: black;
+    transition: 250ms;
+}
+
+.btnPass{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 130px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+.btnPass:hover{
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #546668;
+    border-color: black;
+    transition: 250ms;
+}
+
+.btnModif{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 960px){
+    .PictureDisplay{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 868px){
+    .PictureDisplay{
+        margin-left: 10px;
+        margin-bottom: 2px;
+    }
+
+    .ProfileSection{
+        flex-direction: column;
+    }
+
+    .btnModif{
+        margin-left: 110px;
+    }
+}

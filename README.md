@@ -5,7 +5,6 @@ Website link:
 https://manage-it-2021.herokuapp.com/?fbclid=IwAR3JgEJ5cswGPNDOp_ZP7jMHEzbGbXvwD_Oftvlj8IZag7JUOkVx5-UBN0g
 
 Ce n am fct : 
-- remove la logo la scrisu de jos
 - mai trb adaugat un scroll view or smth in dashboard
 - ar trb sa implementam authu maine
 

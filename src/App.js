@@ -10,6 +10,7 @@ import SignUp from './Pages/SignUp';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Dashboard from './Pages/Dashboard';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
           <Route path='/register' component        = {Register} />
           <Route path='/dashboard' component = {Dashboard} />
         </Switch>
+        <Footer />
       </Router>
+      
     </>
   );
 }

@@ -8,7 +8,6 @@ function SignUp() {
   return(
     <>
       <LoginForm />
-      <Footer />
     </>
   )
 }

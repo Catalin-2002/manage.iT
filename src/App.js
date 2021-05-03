@@ -10,6 +10,7 @@ import SignUp from './Pages/SignUp';
 import Profile from './Pages/Profile';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Dashboard from './Pages/Dashboard';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/sign-up' component        = {SignUp} />
           <Route path='/register' component = {Register} />
           <Route path='/profile' component = {Profile} />
+          <Route path='/dashboard' component = {Dashboard} />
         </Switch>
       </Router>
     </>

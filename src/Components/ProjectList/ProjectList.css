@@ -1,8 +1,9 @@
 .List {
     margin:5px;
     padding:5px;
-    width: 500px;
-    height: 110px;
+    width: 300px;
+    height: 300px;
     overflow: auto;
     text-align:justify;
+    background-color: white;
 }

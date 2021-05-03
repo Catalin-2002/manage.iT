@@ -8,10 +8,10 @@ import ProjectList from '../Components/ProjectList/ProjectList';
 
 function Dashboard() {
   return (
-    <>
+    <div className="Dashboard">
       <ProjectList />
       <NewProject />
-    </>
+    </div>
   );
 }
 

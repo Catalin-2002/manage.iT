@@ -5,7 +5,7 @@ import './NewProject.css';
 
 function NewProject() {
     return(
-    <div className="background">
+    <div className="newProject">
         <div className="right">
             <form>
                 <input

@@ -4,7 +4,7 @@ import '../App.css';
 import LoginForm from '../Components/LoginForm/LoginForm';
 import Footer from '../Components/Footer/Footer';
 
-function SignUp() {
+function SignIn() {
   return(
     <>
       <LoginForm />
@@ -12,4 +12,4 @@ function SignUp() {
   )
 }
 
-export default SignUp;
+export default SignIn;

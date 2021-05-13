@@ -14,6 +14,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          links='sign-in'
         >
           GET STARTED
         </Button>

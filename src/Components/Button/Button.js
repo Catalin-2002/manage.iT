@@ -6,7 +6,7 @@ const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-const PAGES = ['sign-in', 'register', 'profile'];
+const PAGES = ['sign-in', 'register', 'profile', 'newproject'];
 
 export const Button = ({
   children,

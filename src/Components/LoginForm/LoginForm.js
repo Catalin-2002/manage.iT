@@ -13,6 +13,8 @@ function LoginForm() {
 
   const [loginStatus, setLoginStatus] = useState('')
 
+  const [loggedIn, setLoggedIn] = useState(false)
+
   Axios.defaults.withCredentials = true
 
   const login = () =>{
@@ -21,8 +23,19 @@ function LoginForm() {
       password: passwordLog, 
     }).then((response) => {
       console.log(response.data)
-      setLoginStatus(response.data["message"])
+      if (response.data.message){
+          if (response.data.message == "succes.") 
+            window.location.href = '/dashboard'
+      }
+      else setLoginStatus(response.data["message"])
     })
+  }
+
+  const logout = () =>{
+    Axios.get("http://localhost:3001/logout").then((response)=>{
+      console.log(response)
+    })
+    window.location.reload(false)
   }
 
   useEffect (() =>{
@@ -30,8 +43,12 @@ function LoginForm() {
       console.log(response)
       if (response.data.loggedIn == true) {
         console.log(response.data.user[0].email)
+        setLoggedIn(true)
       }
-      else console.log("no user connected")
+      else {
+        setLoggedIn(false)
+        console.log("no user connected")
+      }
     })
   }, [])
 
@@ -39,7 +56,9 @@ function LoginForm() {
         <div className="background">
     <div className='center'>
           <form>
-            <input
+            {
+              !loggedIn &&
+              <input
               className='login-input'
               name='email'
               type='email'
@@ -47,9 +66,11 @@ function LoginForm() {
               onChange = {(e)=>{
                 setEmailLog(e.target.value)
               }}
-            />
+            />}
             <br />
-            <input
+            {
+              !loggedIn && 
+              <input
               className='login-input'
               name='password'
               type='password'
@@ -58,13 +79,17 @@ function LoginForm() {
                 setPasswordLog(e.target.value)
               }}
             />
+            }   
             <br />
             <h4 className="loginMessage">{loginStatus}</h4>
             <br />
-            <Button buttonStyle='btn--outline' onClick = {login}>Submit</Button>
+            {!loggedIn && <Button buttonStyle='btn--outline' onClick = {login}>Submit</Button>}
             <br />
             <br />
             <Button buttonStyle='btn--outline' links='register'>Don't have an account? Sign Up</Button>
+            <br />
+            <br/>
+            {loggedIn && <Button buttonStyle='btn--outline' onClick = {logout}>Sign Out</Button>}
           </form>
               
     </div>

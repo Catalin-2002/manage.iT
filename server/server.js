@@ -109,6 +109,18 @@ app.get("/login", (req, res) =>{
     }
 })
 
+app.get("/logout", (req, res) =>{
+    if (req.session.user){
+       req.session.destroy()
+    }
+    else {
+        res.send({
+            loggedIn: false
+        })
+    }
+})
+
+
 app.post('/login', (req, res) =>{
     const email = req.body.email
     const password = req.body.password
@@ -124,7 +136,8 @@ app.post('/login', (req, res) =>{
                         if (response){
                             req.session.user = result
                             console.log(req.session.user)
-                            res.send(result)
+                            
+                            res.send({result, message: "succes." })
                         }
                         else {
                             res.send({message: "email/password incorrect."})
@@ -138,6 +151,7 @@ app.post('/login', (req, res) =>{
         }
     )
 })
+
 
 app.listen(3001, ()=>{
     console.log("Running on 3001.");

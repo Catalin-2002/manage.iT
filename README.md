@@ -19,3 +19,5 @@ Presentation video link:
 https://www.youtube.com/watch?v=MCwsFCMhZz8
 
 In this repository you will also find a png representing the use-case diagram of the project.
+
+This project is currently running on a local mysql database. Live preview of the website won't allow changes to be made with the backend.

@@ -15,5 +15,7 @@ Necessary plugins:
 Website link:
 https://manage-it-2021.herokuapp.com
 
+Presentation video link:
+https://www.youtube.com/watch?v=MCwsFCMhZz8
 
 In this repository you will also find a png representing the use-case diagram of the project.

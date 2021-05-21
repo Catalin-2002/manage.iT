@@ -27,7 +27,7 @@ function LoginForm() {
           if (response.data.message == "succes.") 
             window.location.href = '/dashboard'
       }
-      else setLoginStatus(response.data["message"])
+      setLoginStatus(response.data["message"])
     })
   }
 

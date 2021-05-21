@@ -3,11 +3,7 @@ import React from 'react';
 import './ProjectList.css';
 
 function ProjectList() {
-    const activities = ["mere", "pere", "banane" , "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane"
-    , "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane"
-    , "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane"
-    , "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane"
-    , "banane", "banane", "banane", "banane", "banane", "banane", "banane", "banane"];
+    const activities = ["Project 1", "Project 2"];
     const listItems  = activities.map((activity) => 
         <li>{activity}</li>
     );

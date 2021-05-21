@@ -120,6 +120,23 @@ app.get("/logout", (req, res) =>{
     }
 })
 
+app.post('/updateFields', (req, res) =>{
+    const fullName = req.body.fullName
+    const address = req.body.address
+    const telephone = req.body.telephone
+    const description = req.body.description
+
+    db.query(
+        "SET full_name = ? telephone = ? address = ? description = ? WHERE email = ?;",
+        [fullName, telephone, address, email],
+        (err, result) =>{
+            if(err) res.send({err: err})
+            else {
+                res.send({message: "update successfull"})
+                }
+            }
+    )
+})
 
 app.post('/login', (req, res) =>{
     const email = req.body.email
